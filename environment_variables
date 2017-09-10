@@ -1,0 +1,29 @@
+# activate conda environment
+source activate fishing_mm2
+
+# project name
+export PROJECT_NAME="fishing_for_fishermen_2"
+
+username=$(whoami)
+
+# location of root repository "/path/to/repo/"
+export ROOT_FOLDER="/mnt/data/"$username"/"
+
+# location of code repository "/path/to/repo/"
+export PROJECT_FOLDER=$ROOT_FOLDER$PROJECT_NAME"/"
+
+# location of data "/path/to/data/"
+export DATA_FOLDER=$ROOT_FOLDER$PROJECT_NAME"/data/"
+
+# location of shape_files "/path/to/data/"
+export SHAPE_FILES_FOLDER=$ROOT_FOLDER$PROJECT_NAME"/src/data/shape_files/"
+
+# location of model outputs
+export MODEL_FOLDER=$ROOT_FOLDER$PROJECT_NAME"/models/"
+
+# location of trajectories
+export TRAJECTORIES_FOLDER=$ROOT_FOLDER$PROJECT_NAME"/trajectories/"
+
+# add lib folder to PYTHONPATH
+unset PYTHONPATH
+export PYTHONPATH=$PYTHONPATH:$ROOT_FOLDER$PROJECT_NAME

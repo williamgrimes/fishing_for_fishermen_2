@@ -1,0 +1,73 @@
+count
+	- count AIS Points
+
+time
+	- time duration
+
+time_diff
+	- median timediff
+	- std timediff
+	- mad timediff
+
+distance_to_shore
+	- median distance_to_shore
+	- max distance_to_shore
+	- std distance_to_shore
+	- mad distance_to_shore
+
+distance_to_port
+	- median distance_to_port
+	- max distance_to_port
+	- std distance_to_port
+	- mad distance_to_port
+
+in_eez
+	- in EEZ ratio
+
+course
+	- mad course
+	- std course
+
+SOG
+	- median SOG
+	- std SOG
+	- mad SOG
+
+Oceanic Depth
+	- median Oceanic Depth
+	- std Oceanic Depth
+	- mad Oceanic Depth
+
+Chloropyll Concentration
+	- median Chloropyll Concentration
+	- std Chloropyll Concentration
+	- mad Chloropyll Concentration
+
+Salinity
+	- median Salinity
+	- std Salinity
+	- mad Salinity
+
+Water Surface Elevation 
+	- median Water Surface Elevation 
+	- std Water Surface Elevation
+
+Sea Temperature 
+	- median Sea Temperature
+	- std Sea Temperature
+	- mad Sea Temperature
+
+Thermocline Depth 
+	- median Thermocline Depth
+	- std Thermocline Depth
+	- mad Thermocline Depth
+
+Eastward Water Velocity 
+	- median Eastward Water Velocity
+	- std  Eastward Water Velocity
+	- mad  Eastward Water Velocity
+
+Northward Water Velocity 
+	- median Northward Water Velocity
+	- std Northward Water Velocity
+	- mad Northward Water Velocity
