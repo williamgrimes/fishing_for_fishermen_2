@@ -44,8 +44,11 @@ The ROC curve will be determined and the score will be determined from the area 
 The contestant's submission will score each track with a probability that the vessel was engaged in each type of fishing.
 Each fishing type will be treated as a binary classifier, and it’s AuC will be calculated as in steps 3-5.
 The true positive rates and the false positive rates are determined as follows:
+
 TPR_i = Accumulate[s_i] / N_TPR
+
 FPR_i = Accumulate[1 - s_i] / N_FPR;
+
 with the addition: FPR_0 = 0;
 where N_TRP is the total number of fishing records of the given type, N_FPR is the total number of records not of that fishing type, and N_TRP + N_FPR = N (total number of records with known status in the test)
 Then the AuC is determined as a numerical integral of TRP over FRP:
