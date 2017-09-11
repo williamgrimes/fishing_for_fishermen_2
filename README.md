@@ -1,7 +1,7 @@
 ## Fishing for Fishermen 2: fishing vessel classification
 This code submitted for Topcoder competition 'Fishing for Fishermen 2' aims to identify the type of fishing being performed by a vessel, based on automatic identification system (AIS) broadcast reports and contextual data. 
 
-https://www.topcoder.com/challenges/#&query=fishing%20&tracks=datasci&tracks=design&tracks=develop
+https://community.topcoder.com/longcontest/?module=ViewProblemStatement&rd=16978&pm=14691
 
 ## Objective
 Create an algorithm to effectively identify if a vessel is fishing--and if so, the type of fishing taking place--based on observable behavior and any additional data such as weather, known fishing grounds, etc. regardless of vessel type or declared purpose.
@@ -51,6 +51,7 @@ FPR_i = Accumulate[1 - s_i] / N_FPR;
 
 with the addition: FPR_0 = 0;
 where N_TRP is the total number of fishing records of the given type, N_FPR is the total number of records not of that fishing type, and N_TRP + N_FPR = N (total number of records with known status in the test)
+
 Then the AuC is determined as a numerical integral of TRP over FRP:
 
 AuC = Sum [TPR_i * (FPR_i - FPR_i-1)]
